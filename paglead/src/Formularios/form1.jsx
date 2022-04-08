@@ -55,7 +55,14 @@ class Form1 extends React.Component {
                     <label htmlFor="lastname" className="placeholder">Telefone</label>
                 </div>
                 <div className="input-container ic2">
-                    <input name="moto" value={this.state.moto} onChange={this.handleOnChange} id="moto" className="input" type="text" placeholder=" "/>
+                    {/* <input name="moto" value={this.state.moto} onChange={this.handleOnChange} id="moto" className="input" type="text" placeholder=" "/> */}
+                    <select name="moto" value={this.state.moto} onChange={this.handleOnChange} id="moto" className="input" placeholder=" ">
+                        <option value="selected" ></option>
+                        <option value="Meteor 350">Meteor 350</option>
+                        <option value="Himalayan 411">Himalayan 411</option>
+                        <option value="Interceptor 650 twin">Interceptor 650 twin</option>
+                        <option value="Continetal 650 twin">Continetal 650 twin</option>
+                    </select>
                     <div className="cut cut-short"></div>
                     <label htmlFor="moto" className="placeholder">Moto</label>
                 </div>
